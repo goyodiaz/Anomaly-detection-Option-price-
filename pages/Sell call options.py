@@ -11,7 +11,6 @@ import datetime
 import matplotlib.dates as mdates
 import seaborn as sns
 import streamlit as st
-import plotly.graph_objects as go
 # Set the app title 
 st.title('Sell call options strategy') 
 # Add a welcome message 
