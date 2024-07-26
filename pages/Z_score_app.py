@@ -17,7 +17,8 @@ st.title('Welcone to my anomaly detection app')
 st.title('based on Z score') 
 # Add a welcome message 
 st.write('Sell call options strategy') 
-st.image("G:/My Drive/Colab Notebooks/Streamlit_app/pages/skewness.png")
+st.image("pages/skewness.png")
+
 st.markdown(
     """
     - Highly positively skewed: Skewness > 1
