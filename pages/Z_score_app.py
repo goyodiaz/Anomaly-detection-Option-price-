@@ -47,7 +47,7 @@ import yfinance as yf
 import pandas as pd
 from scipy.stats import skew, kurtosis
 
-etfs = ["CNDX.L","CSPX.L", "IUIT.L","IUFS.L","IWRD.L","ISEU.L","LSEG.L","IBIT","SOXX","IVW","IETC","IXN"]
+etfs = ["CNDX.L","CSPX.L","IUIT.L","IUFS.L","IWRD.L","ISEU.L","URTH","ACWI","XLF","IBIT","SOXX","XLK","IVW","IXN"]
 z_score_list = []
 current_price_list = []
 skewness_list = []
