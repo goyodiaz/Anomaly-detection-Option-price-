@@ -14,7 +14,9 @@ The application consists of three parts:
 
 ## anomaly detection tools:
 
-Based on mean and standard deviation idetify local minition in the graph
+Based on mean and standard deviation idetify local minition in the graph.
+
+In the image below 
 
  ![image](https://github.com/user-attachments/assets/839e69bb-1f60-43eb-9ed9-5424bf87260d)
 
