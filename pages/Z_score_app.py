@@ -16,7 +16,7 @@ import streamlit as st
 st.title('Welcone to my anomaly detection app')
 st.title('based on Z score') 
 # Add a welcome message 
-st.write('Sell call options strategy') 
+st.write('Anomaly detection app based on Z score') 
 st.image("pages/skewness.png")
 
 st.markdown(
@@ -27,7 +27,8 @@ st.markdown(
     - Moderately negatively skewed: -1 ≤ Skewness < -0.5
     - Highly negatively skewed: Skewness < -1        
 
-
+    - Long signal when  Z score ≤ -2 and Skewness is Approximately symmetric.
+    - Long signal when  Z score ≤ -2.5 and Skewness is Moderately/Highly negatively skewed.
     """
             )
 
