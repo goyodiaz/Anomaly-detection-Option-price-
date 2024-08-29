@@ -28,7 +28,8 @@ widgetuser_input = st.text_input('Enter a ticker  based on yahoo finance:', 'SPY
 
 # Create date inputs for start and end dates
 start_date = st.date_input('Start Date', value=pd.to_datetime('2023-01-01'))
-end_date = st.date_input('End Date', value=pd.to_datetime('2024-07-09'))
+#end_date = st.date_input('End Date', value=pd.to_datetime('2024-07-09'))
+end_date = st.date_input('End Date', value=pd.Timestamp("today"))
 
 # Download SPY data from Yahoo Finance
 symbol=widgetuser_input
