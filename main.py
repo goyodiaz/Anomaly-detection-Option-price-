@@ -16,7 +16,7 @@ st.markdown(
     
 
     Anomaly dectection in the stock market using Machine Learning and Data Science projects.
-    ### Streamlit App Identify the following :
+    ### Anomaly dectection App Identify the following :
     - Long position based on volatility.
     - The percentage of monthly change that help us annual planning in our financial investment.
     - Sell call options with 90 percentage of success to get monthly premium.
