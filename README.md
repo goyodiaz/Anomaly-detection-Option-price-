@@ -7,6 +7,14 @@ By utilizing statistical measures such as mean, mode, interquartile range, stand
 
 The application consists of three parts:
 
-1. A strategy for selling call options based on the Black-Scholes model.
-2. An anomaly detection tool for the stock market using mean, mode, interquartile range, and standard deviation.
-3. A Z-score analysis with skewness and kurtosis to identify potential long positions.
+1.An anomaly detection tools for the stock market using mean, mode, interquartile range, and standard deviation.
+2. A strategy for selling call options based on the Black-Scholes model.
+4. A Z-score analysis with skewness and kurtosis to identify potential long positions.
+
+
+## anomaly detection tools:
+
+Based on mean and standard deviation idetify local minition in the graph
+
+ ![image](https://github.com/user-attachments/assets/839e69bb-1f60-43eb-9ed9-5424bf87260d)
+
