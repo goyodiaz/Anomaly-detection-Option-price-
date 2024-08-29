@@ -18,22 +18,22 @@ Based on mean and standard deviation bollinger band method idetify local minitio
 
 **Exmaple of the tiker QQQ from 1/1/23 until 29/8/24:**
 
-![image](https://github.com/user-attachments/assets/d9431f91-440d-465c-a2da-81880484d249)
+<img src="https://github.com/user-attachments/assets/d9431f91-440d-465c-a2da-81880484d249" width="100" height="100">
 
 The image below calculates the gain percentage, assuming you are using a buy-and-hold strategy with only long signals.
 
-![image](https://github.com/user-attachments/assets/e25eb8f3-956a-4d33-a871-9c812c0b59df =50x50)
+<img src="https://github.com/user-attachments/assets/e25eb8f3-956a-4d33-a871-9c812c0b59df" width="100" height="100">
 
 The image below presents the interquartile range percentage change for each month.
 Statistically, each year should fall within the interquartile range. 
 If there is a year where the red points consistently fall outside the interquartile range month after month, it signals an outlier year.
 
-![image](https://github.com/user-attachments/assets/91190967-792f-4bc0-bb52-ff5421957eda)
+<img src="https://github.com/user-attachments/assets/91190967-792f-4bc0-bb52-ff5421957eda" width="100" height="100">
 
 Finally, the image below presents the probability of achieving a positive return each month.
 We focus on the months with the lowest chance of a positive return to accumulate long positions at lower prices.
 
-![image](https://github.com/user-attachments/assets/34e1cc91-d461-47b4-8329-b41481ba6e75)
+<img src="https://github.com/user-attachments/assets/34e1cc91-d461-47b4-8329-b41481ba6e75" width="100" height="100">
 
 
 
