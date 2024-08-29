@@ -22,7 +22,7 @@ Based on mean and standard deviation bollinger band method idetify local minitio
 
 The image below calculates the gain percentage, assuming you are using a buy-and-hold strategy with only long signals.
 
-![image](https://github.com/user-attachments/assets/e25eb8f3-956a-4d33-a871-9c812c0b59df)
+![image](https://github.com/user-attachments/assets/e25eb8f3-956a-4d33-a871-9c812c0b59df =50x50)
 
 The image below presents the interquartile range percentage change for each month.
 Statistically, each year should fall within the interquartile range. 
