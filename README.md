@@ -46,7 +46,20 @@ Based on your index funds you have you can sell call option with the minimum pro
 
 ## anomaly detection based on z score 
 
-Identify the histograms shapes of different index funds and determine local minimums based on a Z-score of -2 or lower.
+
+Identify the histograms shapes of different index funds with skewness and kurtosis and determine local minimums based on a Z-score of -2 or lower.
+
+
+![image](https://github.com/user-attachments/assets/6ad0c16b-4dd8-4314-b40f-567c9164023b)
+
+
+![image](https://github.com/user-attachments/assets/cf37f671-7a07-4c49-bba1-79780c3764a1)
+
+
+
+
+
+
 
 
 
