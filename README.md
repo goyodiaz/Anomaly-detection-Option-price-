@@ -1,6 +1,8 @@
 # Anomaly-detection-Option-price-
 This application will change your way you see the stock market.
 
+https://anomaly-detection-option-price.streamlit.app/
+
 This application will transform the way you perceive the stock market. 
 
 By utilizing statistical measures such as mean, mode, interquartile range, standard deviation, and z-score, along with the Black-Scholes model, you can identify opportunities that were previously unseen.
