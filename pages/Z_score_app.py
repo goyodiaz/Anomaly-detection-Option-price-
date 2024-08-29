@@ -28,7 +28,7 @@ st.markdown(
     - Highly negatively skewed: Skewness < -1        
 
     - Long signal when  Z score ≤ -2 and Skewness is Approximately symmetric.
-    - Long signal when  Z score ≤ -2.5 and Skewness is Moderately/Highly negatively skewed.
+    - Long signal when  Z score ≤ -2.5 and Skewness is Moderately/Highly positively skewed.
     """
             )
 
