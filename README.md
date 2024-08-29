@@ -36,6 +36,18 @@ We focus on the months with the lowest chance of a positive return to accumulate
 <img src="https://github.com/user-attachments/assets/34e1cc91-d461-47b4-8329-b41481ba6e75" width="500" height="500">
 
 
+## Sell call options strategy
+
+Sell call options strategy to get mouthly income.
+
+Based on your index funds you have you can sell call option with the minimum probability of expiring OTM(OUT OF THE MONEY)
+
+![image](https://github.com/user-attachments/assets/87b30b51-3c2a-4c33-af89-485d1e51d762)
+
+## anomaly detection based on z score 
+
+Identify the histograms shapes of different index funds and determine local minimums based on a Z-score of -2 or lower.
+
 
 
 
