@@ -48,12 +48,42 @@ import yfinance as yf
 import pandas as pd
 from scipy.stats import skew, kurtosis
 
-etfs = ["CNDX.L","CSPX.L","IUIT.L","IUFS.L","IWRD.L","ISEU.L","URTH","ACWI","XLF","IBIT","SOXX","XLK","IVW","IXN"]
+
+# Default ETF tickers
+default_etfs = ["CNDX.L","CSPX.L", "IUIT.L","IUFS.L","IWRD.L","ISEU.L","IBIT","BTC-USD","XLK","SOXX","IVW","IETC","IXN","URTH","ACWI"]
+
+
+# Sidebar for adding new tickers
+st.sidebar.header("Add or Remove Tickers")
+
+# Add new ticker input
+new_ticker = st.sidebar.text_input("Enter a new ETF ticker (e.g., AAPL)")
+
+# Add ticker button
+if st.sidebar.button("Add Ticker"):
+    if new_ticker.upper() not in default_etfs:
+        default_etfs.append(new_ticker.upper())  # Add ticker to the list
+        st.sidebar.success(f"Added {new_ticker.upper()} to the list.")
+    else:
+        st.sidebar.warning(f"{new_ticker.upper()} is already in the list.")
+
+# Allow the user to remove tickers from the list
+tickers_to_remove = st.sidebar.multiselect("Select tickers to remove", default_etfs)
+
+# Remove selected tickers
+if st.sidebar.button("Remove Selected Tickers"):
+    for ticker in tickers_to_remove:
+        default_etfs.remove(ticker)
+    st.sidebar.success(f"Removed selected tickers: {', '.join(tickers_to_remove)}")
+
+# Re-fetch data and re-run calculations for the updated ticker list
+etfs = default_etfs  # Updated list of tickers
 z_score_list = []
 current_price_list = []
 skewness_list = []
 kurtosis_list = []
 
+# Loop through each ETF ticker and calculate Z-score, skewness, kurtosis
 for etf in etfs:
     # Get historical data for the last month
     end_date = pd.Timestamp.now()
@@ -78,13 +108,14 @@ for etf in etfs:
     z_score_current_price = round((current_price - mean_last_month) / std_last_month, 2)
     z_score_list.append(z_score_current_price)
 
+# Create DataFrame to display the results
 df = pd.DataFrame({
     "ETF Symbol": etfs,
-    "current_price": current_price_list,
+    "Current Price": current_price_list,
     "Z Score": z_score_list,
     "Skewness": skewness_list,
     "Kurtosis": kurtosis_list
 })
 
-
+# Display the table sorted by Z-Score
 st.table(df.sort_values(by='Z Score', ascending=True))
