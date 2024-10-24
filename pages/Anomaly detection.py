@@ -46,7 +46,7 @@ spy['SMA'] = spy['Close'].rolling(n).mean()
 spy['STD'] = spy['Close'].rolling(n).std()
 
 # Calculate upper and lower bands
-spy['Upper'] = spy['SMA'] + u * spy['STD']
+#spy['Upper'] = spy['SMA'] + u * spy['STD']
 spy['Lower'] = spy['SMA'] - l * spy['STD']
 
 # Generate buy signals when the Close price crosses below the lower band
@@ -58,12 +58,12 @@ spy['Signal'] = spy['Signal'].diff().fillna(0)
 spy.loc[spy['Signal'] < 0,'Signal'] = 0
 
 # Generate sell signals when the Close price crosses above the upper band
-spy['Sell_Signal'] = 0
-spy.loc[spy['Close'] > spy['Upper'],'Sell_Signal'] = 1
+# spy['Sell_Signal'] = 0
+# spy.loc[spy['Close'] > spy['Upper'],'Sell_Signal'] = 1
 
 # Remove consecutive signals to only show the first sell signal
-spy['Sell_Signal'] = spy['Sell_Signal'].diff().fillna(0)
-spy.loc[spy['Sell_Signal'] < 0, 'Sell_Signal'] = 0
+# spy['Sell_Signal'] = spy['Sell_Signal'].diff().fillna(0)
+# spy.loc[spy['Sell_Signal'] < 0, 'Sell_Signal'] = 0
 
 
 
@@ -94,7 +94,7 @@ ax.plot(spy['SMA'], label='SMA')
 ax.plot(spy['Upper'], label='Upper Band')
 ax.plot(spy['Lower'], label='Lower Band')
 ax.plot(spy.loc[spy['Signal'] == 1, 'Close'], 'o', markersize=10, label='Buy Signal')
-ax.plot(spy.loc[spy['Sell_Signal'] == 1, 'Close'], 'x', markersize=10, label='Sell Signal')
+# ax.plot(spy.loc[spy['Sell_Signal'] == 1, 'Close'], 'x', markersize=10, label='Sell Signal')
 plt.axhline(y=spy.iloc[-1]['Close'], color='r', linestyle='--')
 
 ax.legend()
