@@ -42,7 +42,7 @@ spy.dropna(inplace=True)
 # Generate buy signals when the Close price crosses below the lower band
 spy['Signal'] = 0
 cond = spy['Close'] < spy['Lower']
-spy.loc[cond], 'Signal'] = 1
+spy.loc[cond, 'Signal'] = 1
 
 # Remove consecutive signals to only show the first buy signal
 spy['Signal'] = spy['Signal'].diff().fillna(0)
