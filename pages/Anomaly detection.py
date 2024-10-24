@@ -11,15 +11,16 @@ import datetime
 import matplotlib.dates as mdates
 import seaborn as sns
 import streamlit as st
+import plotly.graph_objects as go
 
 
 
 
     
 # Set the app title 
-st.title('Anomaly detection stock market app') 
+st.title('Anomaly Detcion stock market app') 
 # Add a welcome message 
-st.write('Welcome to my Anomaly detection app!') 
+st.write('Welcome to my Anomaly detcion app!') 
 
 
 # Create a text input 
@@ -28,7 +29,7 @@ widgetuser_input = st.text_input('Enter a ticker  based on yahoo finance:', 'SPY
 
 # Create date inputs for start and end dates
 start_date = st.date_input('Start Date', value=pd.to_datetime('2024-01-01'))
-end_date = st.date_input('End Date', value=pd.Timestamp("today"))
+end_date = st.date_input('End Date', value=pd.to_datetime('2024-07-09'))
 
 # Download SPY data from Yahoo Finance
 symbol=widgetuser_input
@@ -105,7 +106,7 @@ st.pyplot(fig)
 df = pd.DataFrame({'Buy_Signal_Date': lower_dates, ' Buy price':buy_prices,'Gain_Pct': pct_change})
 
 
-st.write("Total return in % :",round(sum(pct_change),2)) 
+#st.write("Total return in % :",round(sum(pct_change),2)) 
 st.write("Current price:",round( spy.iloc[-1]['Close'],2 ))
 st.table(df.round(2))
 
