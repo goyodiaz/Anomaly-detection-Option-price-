@@ -41,8 +41,8 @@ spy.dropna(inplace=True)
 
 # Generate buy signals when the Close price crosses below the lower band
 spy['Signal'] = 0
-st.write(spy)
-st.write(spy.columns)
+st.write(repr(spy.columns))
+st.write(str(spy.columns))
 close = spy['Close'] 
 lower = spy["Lower"]
 cond = spy['Close'] < spy['Lower']
