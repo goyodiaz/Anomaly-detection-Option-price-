@@ -24,7 +24,7 @@ symbol = widgetuser_input
 spy = yf.download(symbol, start=start_date, end=end_date)
 
 # Define Bollinger Band parameters
-n = 22  # number of periods for moving average
+n = 30  # number of periods for moving average
 l = 2   # number of standard deviations for lower band
 u = 2   # number of standard deviations for upper band
 
