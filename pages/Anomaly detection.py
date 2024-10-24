@@ -27,7 +27,7 @@ widgetuser_input = st.text_input('Enter a ticker  based on yahoo finance:', 'SPY
 # Display the customized message 
 
 # Create date inputs for start and end dates
-start_date = st.date_input('Start Date', value=pd.to_datetime('2023-01-01'))
+start_date = st.date_input('Start Date', value=pd.to_datetime('2024-01-01'))
 end_date = st.date_input('End Date', value=pd.Timestamp("today"))
 
 # Download SPY data from Yahoo Finance
@@ -35,7 +35,7 @@ symbol=widgetuser_input
 spy = yf.download(symbol, start=start_date, end=end_date)
 
 # Define Bollinger Band parameters
-n = 30 # number of periods for moving average
+n = 22 # number of periods for moving average
 l = 2 # number of standard deviations for  lower bands
 u=2 # number of standard deviations for upper bands
 
